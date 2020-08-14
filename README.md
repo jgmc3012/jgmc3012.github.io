@@ -1,2 +1,2 @@
-# jgmc3012.github.io
+# Wellcome Devs
 Github Pages Repository
