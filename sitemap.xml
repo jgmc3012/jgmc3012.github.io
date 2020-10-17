@@ -7,11 +7,27 @@
   </url>
   
   <url>
+    <loc>https:///jgmc3012.github.io/apuntes/readme/</loc>
+  </url>
+  
+  <url>
     <loc>https:///jgmc3012.github.io/apuntes/api-rest/</loc>
   </url>
   
   <url>
-    <loc>https:///jgmc3012.github.io/apuntes/bases_de_datos/</loc>
+    <loc>https:///jgmc3012.github.io/apuntes/</loc>
+  </url>
+  
+  <url>
+    <loc>https:///jgmc3012.github.io/apuntes/bases-de-datos/</loc>
+  </url>
+  
+  <url>
+    <loc>https:///jgmc3012.github.io/apuntes/buenas-practicas/</loc>
+  </url>
+  
+  <url>
+    <loc>https:///jgmc3012.github.io/categories/</loc>
   </url>
   
   <url>
@@ -19,11 +35,15 @@
   </url>
   
   <url>
+    <loc>https:///jgmc3012.github.io/apuntes/css-response-desing/</loc>
+  </url>
+  
+  <url>
     <loc>https:///jgmc3012.github.io/apuntes/docker/</loc>
   </url>
   
   <url>
-    <loc>https:///jgmc3012.github.io/apuntes/escritura_online/</loc>
+    <loc>https:///jgmc3012.github.io/apuntes/escritura-online/</loc>
   </url>
   
   <url>
@@ -31,15 +51,15 @@
   </url>
   
   <url>
-    <loc>https:///jgmc3012.github.io/apuntes/good-practices/</loc>
-  </url>
-  
-  <url>
     <loc>https:///jgmc3012.github.io/apuntes/javascript/</loc>
   </url>
   
   <url>
-    <loc>https:///jgmc3012.github.io/apuntes/mongodb/</loc>
+    <loc>https:///jgmc3012.github.io/apuntes/shell/</loc>
+  </url>
+  
+  <url>
+    <loc>https:///jgmc3012.github.io/apuntes/mongo-db/</loc>
   </url>
   
   <url>
@@ -59,31 +79,11 @@
   </url>
   
   <url>
-    <loc>https:///jgmc3012.github.io/apuntes/readme/</loc>
-  </url>
-  
-  <url>
-    <loc>https:///jgmc3012.github.io/apuntes/responsivedesign/</loc>
-  </url>
-  
-  <url>
-    <loc>https:///jgmc3012.github.io/apuntes/shell/</loc>
+    <loc>https:///jgmc3012.github.io/tags/</loc>
   </url>
   
   <url>
     <loc>https:///jgmc3012.github.io/apuntes/vim/</loc>
-  </url>
-  
-  <url>
-    <loc>https:///jgmc3012.github.io/apuntes/</loc>
-  </url>
-  
-  <url>
-    <loc>https:///jgmc3012.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https:///jgmc3012.github.io/tags/</loc>
   </url>
   
 </urlset>

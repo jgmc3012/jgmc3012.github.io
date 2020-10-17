@@ -2,12 +2,12 @@
 <html lang="es-es">
 
 <head>
-  <title> | Jesús Millán</title>
+  <title>Python | Jesús Millán</title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="🐍">
+  <meta name="keywords" content="programacion , desarrollo , software , python">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +15,8 @@
   
   
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="" />
-  <meta name="twitter:description" content=""/>
+  <meta name="twitter:title" content="Python" />
+  <meta name="twitter:description" content="🐍"/>
   <meta name="twitter:site" content="@jgmc3012" />
   <meta name="twitter:creator" content="https://twitter.com/jgmc3012" />
   
@@ -50,12 +50,12 @@
       "@context": "http://schema.org", 
       "@type": "WebSite", 
       "url": "https:\/\/\/jgmc3012.github.io\/apuntes\/python\/",
-      "name": "",
+      "name": "Python",
       "author": {
         "@type": "Person",
         "name": ""
       },
-      "description": ""
+      "description": "🐍"
     }
   
   </script>
@@ -110,7 +110,7 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title"></h1>
+            <h1 id="post__title">Python</h1>
             
           </header>
           <article class="post__content">
@@ -653,6 +653,7 @@ la primera es una <strong>cadena o número</strong> que  será la clave para acc
 </ol>
 <h2 id="generators">Generators<a class="anchor" href="#generators">#</a></h2>
 <p>Los generators son simplemente una forma rápida de crear iterables sin la necesidad de declarar una clase que implemente el protocolo de iteración. Para crear un generator simplemente declaramos una función y utilizamos el keyword <strong>yield</strong> en vez de return para regresar el siguiente valor en una iteración. Por ejemplo,</p>
+<p>Los generadores pueden ser muy aparecidos a las listas. Una de las diferencias es que los generadores ocupan menos espacio en memoria, ya que van &ldquo;llamando&rdquo; un elemento a su vez.</p>
 <pre><code class="language-python">def fibonacci(max):
     a, b = 0, 1
     while a &lt; max:
@@ -665,6 +666,23 @@ fib_nums = [num for num in fib1]
 ...
 double_fib_nums = [num * 2 for num in fib1] # no va a funcionar
 double_fib_nums = [num * 2 for num in fibonacci(30)] # sí funciona
+</code></pre>
+<h3 id="yield-from">Yield From<a class="anchor" href="#yield-from">#</a></h3>
+<p>Una caracteristica de los generadores en python poco conocida/utilizada son los <code>yield from</code> Estos nos permiten &ldquo;insertar&rdquo; generadores dentro de otro.</p>
+<pre><code class="language-python">def frutas():
+    for fruta in ('manzana','pera','limon','patilla'):
+	yield fruta
+
+def comestibles():
+    for comestible in ('pan','arepa','tamal',pasta'):
+	yield comestible
+
+    yield from frutas()
+
+    yield 'arroz'
+
+list(comestible())
+# ['pan','arepa','tamal',pasta','manzana','pera','limon','patilla','arroz']
 </code></pre>
 <h1 id="comprehensions">Comprehensions</h1>
 <p>Son constructos que nos permiten generar secuencias a partir de otras secuencias. Existen 3 tipos:</p>
@@ -1175,16 +1193,16 @@ Namespaces are one honking great idea &ndash; let&rsquo;s do more of those!</p>
 
  <div class="pagination">
   
-    <a class="pagination__item" href="https:///jgmc3012.github.io/apuntes/readme/">
+    <a class="pagination__item" href="https:///jgmc3012.github.io/apuntes/vim/">
         <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title"></span>
+        <span class="pagination__title">Vim</span>
     </a>
   
 
   
     <a class="pagination__item" href="https:///jgmc3012.github.io/apuntes/oop/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" ></a>
+      <span class="pagination__title" >Programación orientada a objetos</a>
     </a>
   
 </div>

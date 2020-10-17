@@ -13,6 +13,15 @@
     
     <item>
       <title></title>
+      <link>https:///jgmc3012.github.io/apuntes/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https:///jgmc3012.github.io/apuntes/readme/</guid>
+      <description>Apuntes Este Repositorio cuenta con algunos de mis apuntes personales que he pasado a digital en formato MarkDown</description>
+    </item>
+    
+    <item>
+      <title>APIs REST</title>
       <link>https:///jgmc3012.github.io/apuntes/api-rest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -22,11 +31,11 @@ REST Es un acrónimo de Representational State Transfer o transferencia de estad
     </item>
     
     <item>
-      <title></title>
-      <link>https:///jgmc3012.github.io/apuntes/bases_de_datos/</link>
+      <title>Bases de Datos</title>
+      <link>https:///jgmc3012.github.io/apuntes/bases-de-datos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https:///jgmc3012.github.io/apuntes/bases_de_datos/</guid>
+      <guid>https:///jgmc3012.github.io/apuntes/bases-de-datos/</guid>
       <description>Importante La gran parte de esta notas asi como la mayoria de sus ejemplo estan en español.
 Esto en proyectos reales, no es una buena practica.
 Estan de esta manera para que le sea de mayor ayuda a los nuevos miembros de la comunidad hispana de programadores.
@@ -34,7 +43,17 @@ MYSQL Instalacion Para realizar la instalación de MySQL en tu pc lo primero que
     </item>
     
     <item>
-      <title></title>
+      <title>Buenas practicas en programación</title>
+      <link>https:///jgmc3012.github.io/apuntes/buenas-practicas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https:///jgmc3012.github.io/apuntes/buenas-practicas/</guid>
+      <description>¿A quién beneficia contar con código bien escrito? El código bien escrito beneficia a todos los involucrados en el proyecto.
+ A tí: Cuando retomemos un proyecto después de un largo tiempo nos beneficiará ya que sabremos cómo está ordenado y cómo está escrito todo. A cualquiera: Cualquier persona que deba modificar el código después de tí. A tu cliente: Aunque nunca lo sabrá, su negocio estará mejor atendido.  Elementos dotan de calidad al código:  Legibilidad: qué tan fácil es interpretar lo que el código dice.</description>
+    </item>
+    
+    <item>
+      <title>CSS - Hojas de estilo en cascada</title>
       <link>https:///jgmc3012.github.io/apuntes/css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -45,7 +64,18 @@ MYSQL Instalacion Para realizar la instalación de MySQL en tu pc lo primero que
     </item>
     
     <item>
-      <title></title>
+      <title>CSS - Response Desing</title>
+      <link>https:///jgmc3012.github.io/apuntes/css-response-desing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https:///jgmc3012.github.io/apuntes/css-response-desing/</guid>
+      <description>1 Conceptos de RWD 1.1 Viewport Es toda la parte visible de nuestro navegador que podemos utilizar para mostral nuestra pagina(NO incluye al scroll).
+Este es la base del response web design. es una etiqueta meta de HTML creada por apple en 2007. Si no esta declarado el viewport en la base del HTML no funcionara nada del response web design.
+**NOTA:**La resolucion del hardware de una pantalla y la resolucion del viewport en el navegador de la misma no son iguales.</description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
       <link>https:///jgmc3012.github.io/apuntes/docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -57,16 +87,16 @@ Directiva A traves de una directiva nosotros definiremos el comportamiento de la
     </item>
     
     <item>
-      <title></title>
-      <link>https:///jgmc3012.github.io/apuntes/escritura_online/</link>
+      <title>Escritura Online</title>
+      <link>https:///jgmc3012.github.io/apuntes/escritura-online/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https:///jgmc3012.github.io/apuntes/escritura_online/</guid>
+      <guid>https:///jgmc3012.github.io/apuntes/escritura-online/</guid>
       <description>Tecnicas base para la redaccion:  Esquema: Para darle orden a nuestras ideas y saber hacia a donde vamos llevando el texto. Manejar una sola idea por parrafo. Evitar ideas superfluas. Tenemos que buscar enseñar algo, que el texto sea relevante para nuestra audiencia. Reducir la repeticion(palabras e ideas) Leer y releer(Nosotros y otras personas). Fuentes. Nos permiten enriqueser nuestros textos para soportar nuestras ideas. Parafrasear. Reducir Gerundios. Estilo. Tenemos que escribir muchas veces.</description>
     </item>
     
     <item>
-      <title></title>
+      <title>Golang - Go</title>
       <link>https:///jgmc3012.github.io/apuntes/golang/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -75,17 +105,7 @@ Directiva A traves de una directiva nosotros definiremos el comportamiento de la
     </item>
     
     <item>
-      <title></title>
-      <link>https:///jgmc3012.github.io/apuntes/good-practices/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https:///jgmc3012.github.io/apuntes/good-practices/</guid>
-      <description>¿A quién beneficia contar con código bien escrito? El código bien escrito beneficia a todos los involucrados en el proyecto.
- A tí: Cuando retomemos un proyecto después de un largo tiempo nos beneficiará ya que sabremos cómo está ordenado y cómo está escrito todo. A cualquiera: Cualquier persona que deba modificar el código después de tí. A tu cliente: Aunque nunca lo sabrá, su negocio estará mejor atendido.  Elementos dotan de calidad al código:  Legibilidad: qué tan fácil es interpretar lo que el código dice.</description>
-    </item>
-    
-    <item>
-      <title></title>
+      <title>Javascript</title>
       <link>https:///jgmc3012.github.io/apuntes/javascript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -96,17 +116,27 @@ Todo script que carguemos en nuestra página tiene un llamado y una ejecución. 
     </item>
     
     <item>
-      <title></title>
-      <link>https:///jgmc3012.github.io/apuntes/mongodb/</link>
+      <title>Linea de comandos</title>
+      <link>https:///jgmc3012.github.io/apuntes/shell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https:///jgmc3012.github.io/apuntes/mongodb/</guid>
+      <guid>https:///jgmc3012.github.io/apuntes/shell/</guid>
+      <description>Lista de comandos más usados Conceptos  PROMPT: Donde se encuentra el cursor, un lugar en el árbol de nodos que es la representación del disco duro en el sistema operativo  Comandos (y algunas banderas)   whoami: Imprime en el output el identificador de usuario.
+  sed: Sirve para modificar texto por streaming. Para mas info consulta man sed. El comando mas comun es reemplazar texto en todo un fichero, esto con: sed s/viejo/nuevo/g.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB</title>
+      <link>https:///jgmc3012.github.io/apuntes/mongo-db/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https:///jgmc3012.github.io/apuntes/mongo-db/</guid>
       <description>Bases de datos NoSQL Las bases de datos NoSQL tienen 4 grandes familias: Key Value Stores, basadas en grafos, columnares y basadas en documentos.
 Key Value Stores: Guardan la información en formato de llaves y valores. Las usamos para guardar cache, información de sesión de los usuarios o cosas muy sencillas. Son muy rápidas de consultar pero no podemos usarlas en casos más complejos donde necesitamos estructuras más especiales. El mejor ejemplo de estas bases de datos es Redis.</description>
     </item>
     
     <item>
-      <title></title>
+      <title>Nginx</title>
       <link>https:///jgmc3012.github.io/apuntes/nginx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -117,7 +147,7 @@ Conceptos Basicos Directivas Son basicamente funciones, estan compuestas por un 
     </item>
     
     <item>
-      <title></title>
+      <title>Node.js</title>
       <link>https:///jgmc3012.github.io/apuntes/node/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -128,7 +158,7 @@ Conceptos Basicos Directivas Son basicamente funciones, estan compuestas por un 
     </item>
     
     <item>
-      <title></title>
+      <title>Programación orientada a objetos</title>
       <link>https:///jgmc3012.github.io/apuntes/oop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -139,7 +169,7 @@ Un paradigma es una teoría que suministra la base y modelo para resolver proble
     </item>
     
     <item>
-      <title></title>
+      <title>Python</title>
       <link>https:///jgmc3012.github.io/apuntes/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -150,37 +180,7 @@ Instalación Existen dos versiones de Python que tienen gran uso actualmente, Py
     </item>
     
     <item>
-      <title></title>
-      <link>https:///jgmc3012.github.io/apuntes/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https:///jgmc3012.github.io/apuntes/readme/</guid>
-      <description>apuntes Este Repositorio cuenta con algunos de mis apuntes personales que he pasado a digital en formato MarkDown</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https:///jgmc3012.github.io/apuntes/responsivedesign/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https:///jgmc3012.github.io/apuntes/responsivedesign/</guid>
-      <description>1 Conceptos de RWD 1.1 Viewport Es toda la parte visible de nuestro navegador que podemos utilizar para mostral nuestra pagina(NO incluye al scroll).
-Este es la base del response web design. es una etiqueta meta de HTML creada por apple en 2007. Si no esta declarado el viewport en la base del HTML no funcionara nada del response web design.
-**NOTA:**La resolucion del hardware de una pantalla y la resolucion del viewport en el navegador de la misma no son iguales.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https:///jgmc3012.github.io/apuntes/shell/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https:///jgmc3012.github.io/apuntes/shell/</guid>
-      <description>Lista de comandos más usados Conceptos  PROMPT: Donde se encuentra el cursor, un lugar en el árbol de nodos que es la representación del disco duro en el sistema operativo  Comandos (y algunas banderas)   whoami: Imprime en el output el identificador de usuario.
-  sed: Sirve para modificar texto por streaming. Para mas info consulta man sed. El comando mas comun es reemplazar texto en todo un fichero, esto con: sed s/viejo/nuevo/g.</description>
-    </item>
-    
-    <item>
-      <title></title>
+      <title>Vim</title>
       <link>https:///jgmc3012.github.io/apuntes/vim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
