@@ -23,6 +23,7 @@
 
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
+
   
   
     
@@ -34,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/jgmc3012.github.io/css/post.min.2cb93c91050d1853bf971cc31e00122edd6e0f405aa1de3b7f8ef67ea3b5a79a.css" integrity="sha256-LLk8kQUNGFO/lxzDHgASLt1uD0Baod47f472fqO1p5o="/>
+    <link type="text/css" rel="stylesheet" href="/jgmc3012.github.io/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
   
     
     <link type="text/css" rel="stylesheet" href="/jgmc3012.github.io/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
@@ -117,16 +118,28 @@
               
 <h1 id="1-fundamentos">1 Fundamentos</h1>
 <h2 id="11-sintaxis">1.1 Sintaxis<a class="anchor" href="#11-sintaxis">#</a></h2>
-<p>Puede echarle un vistazo a al vocabulario de css <a href="http://apps.workflower.fi/vocabs/css/en#comment">aqui</a></p>
+<p>Puede echarle un vistazo a al vocabulario de css <a href="http://apps.workflower.fi/vocabs/css/en#comment" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>aqui</a>
+</p>
 <ul>
 <li>Comentarios:</li>
 </ul>
 <p><code>/* Esto es un comentario en CSS */</code></p>
 <h2 id="12-estilos-del-navegador">1.2 Estilos del navegador<a class="anchor" href="#12-estilos-del-navegador">#</a></h2>
 <p>Por defecto cada browser contiene un estilo de css. Esto puede ocasionar distinta clase de problemas a la hora de nosotros implementar nuestros estilos.
-La manera de resolver esto es utilizando una libreria de terceros llamada <a href="https://necolas.github.io/normalize.css/">normalize</a> que como su nombre lo indica nos normaliza los estilos por defecto que vayamos a utilizar.</p>
+La manera de resolver esto es utilizando una libreria de terceros llamada <a href="https://necolas.github.io/normalize.css/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>normalize</a>
+ que como su nombre lo indica nos normaliza los estilos por defecto que vayamos a utilizar.</p>
 <h2 id="13-soporte">1.3 Soporte<a class="anchor" href="#13-soporte">#</a></h2>
-<p>En <a href="https://caniuse.com">esta pagina</a> podemos buscar una caracteristica o propiedad y ver su soporte en los navegadores</p>
+<p>En <a href="https://caniuse.com" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>esta pagina</a>
+ podemos buscar una caracteristica o propiedad y ver su soporte en los navegadores</p>
 <h2 id="14-variables">1.4 Variables<a class="anchor" href="#14-variables">#</a></h2>
 <p>Son espacios en memoria que almacenan un valor.</p>
 <h3 id="141-declaracion">1.4.1 Declaracion<a class="anchor" href="#141-declaracion">#</a></h3>
@@ -731,7 +744,11 @@ El id del elemento debe conincidir con el identificador de fragmentos de la URI 
 <p>Selecciona al elemento indicado que sea el ultimo hijo de su elemento padre</p>
 <h2 id="95-of-type">9.5 of type<a class="anchor" href="#95-of-type">#</a></h2>
 <p>Hay 3 tipos de, funcionan muy similar a las pseudoclases hijas y estos hacen referencia al enesimo, al primero y al ultimo respectivamente:</p>
-<p>Puedes visualizar mejor las diferencias en <a href="https://css-tricks.com/examples/nth-child-tester/">esta web</a></p>
+<p>Puedes visualizar mejor las diferencias en <a href="https://css-tricks.com/examples/nth-child-tester/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>esta web</a>
+</p>
 <h3 id="951-nth-of-type">9.5.1 nth-of-type()<a class="anchor" href="#951-nth-of-type">#</a></h3>
 <p>Selecciona al elemento indicado que sea el n-esimo hijo de su elemento padre y del mismo tipo al elemento indicado.</p>
 <p><strong>NOTA:</strong> Si el atributo es (3n). los estilos indicados seran aplicados cada 3 hijos. Si es (odd) Sera aplicado a los elementos pares. Si es (even) Sera aplicado a los elementos impares.</p>
@@ -835,10 +852,18 @@ Hay varias cosas a tener encuenta:</p>
 <p>Existen diferentes y muy variados keyword para los colores puedes verlos aca:</p>
 <ul>
 <li>
-<p><strong><a href="https://www.w3.org/wiki/CSS/Properties/color/keywords">Colores Basicos</a></strong></p>
+<p><strong><a href="https://www.w3.org/wiki/CSS/Properties/color/keywords" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Colores Basicos</a>
+</strong></p>
 </li>
 <li>
-<p><strong><a href="https://en.wikipedia.org/wiki/X11_color_names">Colores X11</a></strong></p>
+<p><strong><a href="https://en.wikipedia.org/wiki/X11_color_names" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Colores X11</a>
+</strong></p>
 </li>
 <li>
 <p>transparent</p>
@@ -962,7 +987,11 @@ En este caso el <em>offset</em> indica en que instante el elemento pasara a ser 
 <li>Por defecto <em>todos</em> los elemmentos tienen z-index = 0.</li>
 <li>Para elementos con igual z-index se sobrepondran aquellos que aparezcan despues en el flujo(codigo HTML).</li>
 </ul>
-<p>Una estructura recomendada por el equipo de <a href="https://ed.team">EDteam</a> es:</p>
+<p>Una estructura recomendada por el equipo de <a href="https://ed.team" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>EDteam</a>
+ es:</p>
 <pre><code class="language-css">    --z-back    : -10;
     --z-normal  : 1;
     --z-tooltip : 10;
@@ -1338,7 +1367,11 @@ Unidades de rotacion:</p>
 </ul>
 </li>
 </ol>
-<p>Puedes observar con mas detalle la lista de elementos disparadores <a href="https://csstriggers.com">acá</a>.</p>
+<p>Puedes observar con mas detalle la lista de elementos disparadores <a href="https://csstriggers.com" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>acá</a>
+.</p>
 <p>NOTA: Existe una extension de VScode llamada css-triggers muy util. Esta basada en la lista del link de arriba.</p>
 <h2 id="182-valores-iniciales">18.2 Valores iniciales<a class="anchor" href="#182-valores-iniciales">#</a></h2>
 <p>Todas las porpiedades CSS tiene un valor inicial por defecto, asi no se lo asignemos. Este valor debe ser numerico para que para que pueda ejecutarse la animacion. De lo contrario el navegador no pueder calcular los valores intermedios de la animacion.</p>
@@ -1414,7 +1447,11 @@ Si los numeros de transiciones no coinciden con las multiples propiedades se hac
 </ol>
 <h4 id="18411-css-timing-function">18.4.1.1 CSS Timing Function</h4>
 <h5 id="184111-cubic-bezier">18.4.1.1.1 Cubic-bezier()</h5>
-<p>Esta basada en una <a href="https://link">curva bezier</a> como las utilizadas en programas de diseño para dibujar vectores.</p>
+<p>Esta basada en una <a href="https://link" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>curva bezier</a>
+ como las utilizadas en programas de diseño para dibujar vectores.</p>
 <p>Es un concepto usado para indicar una relacion entre valores. En este caso es una curva que controla la relacion tiemp/cambio en la animacion:</p>
 <ul>
 <li>Eje X(horizontal): Tiempo.</li>
@@ -1430,8 +1467,16 @@ Si los numeros de transiciones no coinciden con las multiples propiedades se hac
 <li>Los valores van de 0 a 1</li>
 <li>Pueden ser mayores que 1(o negativos) en el eje Y(nunca en X porque es el tiempo)creando interesantes efectos.</li>
 </ul>
-<p><a href="https://www.w3.org/TR/css-easing-1/">Referencias</a></p>
-<p><a href="https://cubic-bezier.com/#.17,.67,.83,.67">Herramienta en linea</a>. Loas navegadores tambien tienen un editor en las herramientas de desarrolladores</p>
+<p><a href="https://www.w3.org/TR/css-easing-1/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Referencias</a>
+</p>
+<p><a href="https://cubic-bezier.com/#.17,.67,.83,.67" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Herramienta en linea</a>
+. Loas navegadores tambien tienen un editor en las herramientas de desarrolladores</p>
 <h3 id="1842-at-rule-keyframes">18.4.2 at-rule keyframes<a class="anchor" href="#1842-at-rule-keyframes">#</a></h3>
 <pre><code class="language-CSS">@keyframes nombre-animacion {
 
@@ -1481,7 +1526,7 @@ Si los numeros de transiciones no coinciden con las multiples propiedades se hac
   
     <a class="pagination__item" href="https:///jgmc3012.github.io/apuntes/buenas-practicas/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Buenas practicas en programación</a>
+      <span class="pagination__title" >Buenas practicas en programación</span>
     </a>
   
 </div>
@@ -1514,7 +1559,7 @@ Si los numeros de transiciones no coinciden con las multiples propiedades se hac
   
      
     
-      <a class="social-icons__link" title="Twitter"
+      <a class="social-icons__link" rel="me" title="Twitter"
          href="https://twitter.com/jgmc3012"
          target="_blank" rel="noopener">
         <div class="social-icons__icon" style="background-image: url('https:///jgmc3012.github.io/svg/twitter.svg')"></div>
@@ -1523,7 +1568,7 @@ Si los numeros de transiciones no coinciden con las multiples propiedades se hac
   
      
     
-      <a class="social-icons__link" title="GitHub"
+      <a class="social-icons__link" rel="me" title="GitHub"
          href="https://github.com/jgmc3012"
          target="_blank" rel="noopener">
         <div class="social-icons__icon" style="background-image: url('https:///jgmc3012.github.io/svg/github.svg')"></div>
@@ -1532,7 +1577,7 @@ Si los numeros de transiciones no coinciden con las multiples propiedades se hac
   
      
     
-      <a class="social-icons__link" title="LinkedIn"
+      <a class="social-icons__link" rel="me" title="LinkedIn"
          href="https://www.linkedin.com/in/jesus-gabriel-millan-corobo-42664412a/"
          target="_blank" rel="noopener">
         <div class="social-icons__icon" style="background-image: url('https:///jgmc3012.github.io/svg/linkedin.svg')"></div>

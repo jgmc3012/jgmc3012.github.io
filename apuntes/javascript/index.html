@@ -23,6 +23,7 @@
 
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
+
   
   
     
@@ -34,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/jgmc3012.github.io/css/post.min.2cb93c91050d1853bf971cc31e00122edd6e0f405aa1de3b7f8ef67ea3b5a79a.css" integrity="sha256-LLk8kQUNGFO/lxzDHgASLt1uD0Baod47f472fqO1p5o="/>
+    <link type="text/css" rel="stylesheet" href="/jgmc3012.github.io/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
   
     
     <link type="text/css" rel="stylesheet" href="/jgmc3012.github.io/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
@@ -664,7 +665,11 @@ console.log(persona.nombre); //camilo
 console.log(persona.apellido); //sanchez
 </code></pre>
 <h1 id="proxy">Proxy</h1>
-<p>El objeto <strong><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Proxy">Proxy</a></strong> se usa para definir un comportamiento personalizado para operaciones fundamentales (por ejemplo, para observar propiedades, cuando se asignan, enumeración, invocación de funciones, etc).
+<p>El objeto <strong><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Proxy" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Proxy</a>
+</strong> se usa para definir un comportamiento personalizado para operaciones fundamentales (por ejemplo, para observar propiedades, cuando se asignan, enumeración, invocación de funciones, etc).
 Sirve para interceptar la lectura de propiedades de un objeto (los get, y set) entre muchas otras funciones. Así, antes de que la llamada llegue al objeto podemos manipularla con una lógica que nosotros definamos. Esto lo hacemos por medio de &ldquo;trampas&rdquo;&rdquo;.
 Ejemplo:
 En este simple ejemplo el número <strong>37</strong> se devuelve como valor predeterminado cuando la propiedad <code>name</code> no se encuentra en el objeto. Se utilizando el manejador <code>get</code>.</p>
@@ -1060,7 +1065,11 @@ Ejemplo:</p>
   })
 </code></pre>
 <p><em>NOTA:</em> La página se recarga al momento de ejecutarse el evento submit, para evitar esto debemos quitarle la acción por defecto que viene en submit usando el método event.preventDefault().</p>
-<p><em>NOTA:</em> Se puede consultar los eventos disponibles para los elenmentos HTML desde <a href="https://developer.mozilla.org/es/docs/Web/API/Event">aqui</a></p>
+<p><em>NOTA:</em> Se puede consultar los eventos disponibles para los elenmentos HTML desde <a href="https://developer.mozilla.org/es/docs/Web/API/Event" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>aqui</a>
+</p>
 <h2 id="formulario">Formulario<a class="anchor" href="#formulario">#</a></h2>
 <p>Algo muy comun en el desarrollo de aplicaciones en especial las CRUD es la intercacion con formularios para esto Js nos ofrece el metodo <strong>FormData</strong> el cual recibe como parametro un elemento HTML form para interactuar con sus datos.
 Sus principales metodos son <strong>get(&lsquo;name&rsquo;)</strong> y <strong>set(&lsquo;name&rsquo;, &lsquo;value&rsquo;)</strong> donde &lsquo;name&rsquo; es el nombre del sub-elemento del formulario. Ejemplo:</p>
@@ -1236,7 +1245,15 @@ function* fibonacci() {
 <h2 id="parsers-y-el-abstract-syntax-tree">Parsers y el Abstract Syntax Tree<a class="anchor" href="#parsers-y-el-abstract-syntax-tree">#</a></h2>
 <p>El JS Engine recibe el código fuente y lo procesa de la siguiente manera:</p>
 <ul>
-<li>El <strong>parser</strong> descompone y <a href="https://esprima.org/demo/parse.html">crea tokens</a> que integran el <strong><a href="https://astexplorer.net">AST</a></strong>(Abstract syntax tree).</li>
+<li>El <strong>parser</strong> descompone y <a href="https://esprima.org/demo/parse.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>crea tokens</a>
+ que integran el <strong><a href="https://astexplorer.net" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>AST</a>
+</strong>(Abstract syntax tree).</li>
 <li>Se compila a <strong>bytecode</strong> y se ejecuta.</li>
 <li>Lo que se pueda se <strong>optimiza a machine code</strong> y se reemplaza el código base.</li>
 </ul>
@@ -1244,7 +1261,11 @@ function* fibonacci() {
 <p>El <em>parser</em> es del 15% al 20% del proceso de ejecución y es triste, pero la <strong>mayoria</strong> del JavaScript en una paga nunca se ejecuta.
 Por lo que <em>parsear</em> el código justo en el momento que lo necesitamos y no antes de saber si se va a usar o no es super importante. Esto lo podemos hacer por medio de <strong>bundling</strong> y <strong>code splitting</strong>.</p>
 <h3 id="creacion-de-una-regla-para-ast">Creacion de una regla para AST<a class="anchor" href="#creacion-de-una-regla-para-ast">#</a></h3>
-<p>Vamos a usar el <strong>AST</strong> para crear una regla de <strong>eslint</strong>, este analizará estéticamente nuestro código a ver si hay que levantar un warning por violar la sintaxis. Muchas de estas reglas ya viene con e eslint, pero podemos agregar nuestras propias reglas. Vamos a usar la herramienta <a href="https://astexplorer.net/#/gist/16fc27fc420f705455f2b42b6c804aa1/42c2d7223f31edbb41bb9615f556d68cb7a793e4">AST Explorer</a> para experimentar. Usaremos la configuración por defecto, veremos en la parte superior izquierda el código que vamos a ingresar, a la derecha el tree creado, en la parte inferior izquierda las funciones de las reglas(que crearemos) y a la derecha de eso la salida de nuestro código.</p>
+<p>Vamos a usar el <strong>AST</strong> para crear una regla de <strong>eslint</strong>, este analizará estéticamente nuestro código a ver si hay que levantar un warning por violar la sintaxis. Muchas de estas reglas ya viene con e eslint, pero podemos agregar nuestras propias reglas. Vamos a usar la herramienta <a href="https://astexplorer.net/#/gist/16fc27fc420f705455f2b42b6c804aa1/42c2d7223f31edbb41bb9615f556d68cb7a793e4" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>AST Explorer</a>
+ para experimentar. Usaremos la configuración por defecto, veremos en la parte superior izquierda el código que vamos a ingresar, a la derecha el tree creado, en la parte inferior izquierda las funciones de las reglas(que crearemos) y a la derecha de eso la salida de nuestro código.</p>
 <h4 id="test">Test</h4>
 <p>En el <strong>link</strong> de <strong>AST Explorer</strong> ya tenemos un código escrito. Donde el la primera entrada tenemos las tareas que debe cumplir nuestro <strong>fixer</strong>.</p>
 <pre><code class="language-[JavaScript]">const pi = 3.1415;
@@ -1325,7 +1346,7 @@ Los Queue utilizados por Js son:</p>
   
     <a class="pagination__item" href="https:///jgmc3012.github.io/apuntes/golang/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Golang - Go</a>
+      <span class="pagination__title" >Golang - Go</span>
     </a>
   
 </div>
@@ -1358,7 +1379,7 @@ Los Queue utilizados por Js son:</p>
   
      
     
-      <a class="social-icons__link" title="Twitter"
+      <a class="social-icons__link" rel="me" title="Twitter"
          href="https://twitter.com/jgmc3012"
          target="_blank" rel="noopener">
         <div class="social-icons__icon" style="background-image: url('https:///jgmc3012.github.io/svg/twitter.svg')"></div>
@@ -1367,7 +1388,7 @@ Los Queue utilizados por Js son:</p>
   
      
     
-      <a class="social-icons__link" title="GitHub"
+      <a class="social-icons__link" rel="me" title="GitHub"
          href="https://github.com/jgmc3012"
          target="_blank" rel="noopener">
         <div class="social-icons__icon" style="background-image: url('https:///jgmc3012.github.io/svg/github.svg')"></div>
@@ -1376,7 +1397,7 @@ Los Queue utilizados por Js son:</p>
   
      
     
-      <a class="social-icons__link" title="LinkedIn"
+      <a class="social-icons__link" rel="me" title="LinkedIn"
          href="https://www.linkedin.com/in/jesus-gabriel-millan-corobo-42664412a/"
          target="_blank" rel="noopener">
         <div class="social-icons__icon" style="background-image: url('https:///jgmc3012.github.io/svg/linkedin.svg')"></div>

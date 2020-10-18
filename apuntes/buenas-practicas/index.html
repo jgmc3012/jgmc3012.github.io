@@ -23,6 +23,7 @@
 
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
+
   
   
     
@@ -34,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/jgmc3012.github.io/css/post.min.2cb93c91050d1853bf971cc31e00122edd6e0f405aa1de3b7f8ef67ea3b5a79a.css" integrity="sha256-LLk8kQUNGFO/lxzDHgASLt1uD0Baod47f472fqO1p5o="/>
+    <link type="text/css" rel="stylesheet" href="/jgmc3012.github.io/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
   
     
     <link type="text/css" rel="stylesheet" href="/jgmc3012.github.io/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
@@ -124,8 +125,16 @@
 </ul>
 <h1 id="elementos-dotan-de-calidad-al-código">Elementos dotan de calidad al código:</h1>
 <ul>
-<li><a href="#legibilidad">Legibilidad</a>: qué tan fácil es interpretar lo que el código dice.</li>
-<li><a href="#mantenibilidad">Mantenibilidad</a>: cuánto esfuerzo supondrá adaptar el código a nuevos requerimientos.</li>
+<li><a href="#legibilidad" 
+  
+  
+>Legibilidad</a>
+: qué tan fácil es interpretar lo que el código dice.</li>
+<li><a href="#mantenibilidad" 
+  
+  
+>Mantenibilidad</a>
+: cuánto esfuerzo supondrá adaptar el código a nuevos requerimientos.</li>
 <li>Testeabilidad: cuánto esfuerzo supondrá realizar pruebas sobre este código.</li>
 </ul>
 <p><a name="legibilidad"></a></p>
@@ -207,11 +216,31 @@ Usualmente lo que haremos es agrupar los archivos que tengan contenido similar e
 <p><strong>SOLID</strong> son cinco principios básicos de la programación orientada a objetos que ayudan a crear software mantenible en el tiempo.</p>
 <p><strong>SOLID</strong> significa:</p>
 <ul>
-<li><a href="#single">S</a>: Single Reponsibility Principle.</li>
-<li><a href="#open">O</a>: Open/Closed Principle.</li>
-<li><a href="#liskov">L</a>: Liskov Substitution Principle.</li>
-<li><a href="#interface">I</a>: Interface Segregation Principle.</li>
-<li><a href="#dependency">D</a>: Dependency Inversion Principle.</li>
+<li><a href="#single" 
+  
+  
+>S</a>
+: Single Reponsibility Principle.</li>
+<li><a href="#open" 
+  
+  
+>O</a>
+: Open/Closed Principle.</li>
+<li><a href="#liskov" 
+  
+  
+>L</a>
+: Liskov Substitution Principle.</li>
+<li><a href="#interface" 
+  
+  
+>I</a>
+: Interface Segregation Principle.</li>
+<li><a href="#dependency" 
+  
+  
+>D</a>
+: Dependency Inversion Principle.</li>
 </ul>
 <p><a name="ingle"></a></p>
 <h2 id="single-reponsibility-principle">Single Reponsibility Principle<a class="anchor" href="#single-reponsibility-principle">#</a></h2>
@@ -315,7 +344,11 @@ class DocProcessor
 }
 </code></pre>
 <p>Otro ejemplo:
-Volamos un instante con el codigo de ejemplo en <a href="#open">Open/Closed Principle</a> y regresemos aca.
+Volamos un instante con el codigo de ejemplo en <a href="#open" 
+  
+  
+>Open/Closed Principle</a>
+ y regresemos aca.
 Supongamos que creamos otra clase llamado Triangulo, que hace algo muy similar a la clase Rectangulo, esta calcula el area de dicha figura.</p>
 <p>Pero, ¿que pasa si ahora queremos imprimir el area del triangulo?. Deberiamos hacer algo asi en la clase &lsquo;Presentación&rsquo;</p>
 <pre><code class="language-java">package main;
@@ -396,44 +429,140 @@ A client should never be forced to implement an inaterface that it doesn&rsquo;t
 <p>Los patrones de diseño son soluciones de arquitectura de software aplicables a diferentes problemas. Estos son soluciones conceptuales que se pueden aplicar a la hora de pensar como diseñar las clases.</p>
 <p>Basicamente existen 3 tipos:</p>
 <ol>
-<li><a href="#creacionales"><strong>Creacionales:</strong></a> Nos hablan de como se crean nuevas instancias de los objetos.</li>
+<li><a href="#creacionales" 
+  
+  
+><strong>Creacionales:</strong></a>
+ Nos hablan de como se crean nuevas instancias de los objetos.</li>
 </ol>
 <p>Entre ellos encontramos:</p>
 <ul>
-<li><a href="#abstract_factory"><em>Abstract Factory</em></a>: Provee una interfaz para la creacion de familias de objetos sin espeficicar una clase en concreto.</li>
-<li><a href="#builder"><em>Builder</em></a>: Separa la construccion de objectos complejos.</li>
-<li><a href="#factory_method"><em>Factory Method</em></a>: Define un interfaz para la creacion de un objecto pero deja qu la subclase decida que clase instanciar.</li>
-<li><a href="#prototype"><em>Prototype</em></a>: especifica que tipo de objectos crear usando una instancia prototipo y crea nuevos objecos copiando este prototipo.</li>
-<li><a href="#singleton"><em>Singleton</em></a>: Nos aseguramos que una clase solo puede ser instanciada una vez, ademas de proveer un punto de acceso a esta.</li>
+<li><a href="#abstract_factory" 
+  
+  
+><em>Abstract Factory</em></a>
+: Provee una interfaz para la creacion de familias de objetos sin espeficicar una clase en concreto.</li>
+<li><a href="#builder" 
+  
+  
+><em>Builder</em></a>
+: Separa la construccion de objectos complejos.</li>
+<li><a href="#factory_method" 
+  
+  
+><em>Factory Method</em></a>
+: Define un interfaz para la creacion de un objecto pero deja qu la subclase decida que clase instanciar.</li>
+<li><a href="#prototype" 
+  
+  
+><em>Prototype</em></a>
+: especifica que tipo de objectos crear usando una instancia prototipo y crea nuevos objecos copiando este prototipo.</li>
+<li><a href="#singleton" 
+  
+  
+><em>Singleton</em></a>
+: Nos aseguramos que una clase solo puede ser instanciada una vez, ademas de proveer un punto de acceso a esta.</li>
 </ul>
 <ol start="2">
-<li><a href="#estructurales"><strong>Estructurales:</strong></a> Nos hablan de como debemos estructurar nuestras clases para crear estructuras flexibles y eficientes.</li>
+<li><a href="#estructurales" 
+  
+  
+><strong>Estructurales:</strong></a>
+ Nos hablan de como debemos estructurar nuestras clases para crear estructuras flexibles y eficientes.</li>
 </ol>
 <p>Entre ellos encontramos:</p>
 <ul>
-<li><a href="#adapter"><em>Adapter</em></a>: Convierte la interaz de una clase en otro interfaz quee cliente espera.</li>
-<li><a href="#bridge"><em>Bridge</em></a>: Nos permite desacoplar un a abstracción de su implementacion, de manera que ambas puedan ser modificadas indepedientemente sin necesdad de alterar por ello la otra.</li>
-<li><a href="#composite"><em>Composite</em></a>: sirve para construir objetos complejos a partir de otros más simples y similares entre sí, gracias a la composición recursiva y a una estructura en forma de árbol.</li>
-<li><a href="#decorator"><em>Decorator</em></a>: Agrega responsabilidades adicionales a un objeto de forma dinámica.</li>
-<li><a href="#facade"><em>Facade</em></a>: Nos permite utilizar módulos complejos de una forma sencilla y con bajos costos para el cliente.</li>
-<li><a href="#flyweight"><em>Flyweight</em></a>: Nos permite eliminar o reducir redundancia cuando trabajamos con una gran cantidad de objetos.</li>
-<li><a href="#proxy"><em>Proxy</em></a>: Permite controlar el acceso a diferentes áreas de módulos.</li>
+<li><a href="#adapter" 
+  
+  
+><em>Adapter</em></a>
+: Convierte la interaz de una clase en otro interfaz quee cliente espera.</li>
+<li><a href="#bridge" 
+  
+  
+><em>Bridge</em></a>
+: Nos permite desacoplar un a abstracción de su implementacion, de manera que ambas puedan ser modificadas indepedientemente sin necesdad de alterar por ello la otra.</li>
+<li><a href="#composite" 
+  
+  
+><em>Composite</em></a>
+: sirve para construir objetos complejos a partir de otros más simples y similares entre sí, gracias a la composición recursiva y a una estructura en forma de árbol.</li>
+<li><a href="#decorator" 
+  
+  
+><em>Decorator</em></a>
+: Agrega responsabilidades adicionales a un objeto de forma dinámica.</li>
+<li><a href="#facade" 
+  
+  
+><em>Facade</em></a>
+: Nos permite utilizar módulos complejos de una forma sencilla y con bajos costos para el cliente.</li>
+<li><a href="#flyweight" 
+  
+  
+><em>Flyweight</em></a>
+: Nos permite eliminar o reducir redundancia cuando trabajamos con una gran cantidad de objetos.</li>
+<li><a href="#proxy" 
+  
+  
+><em>Proxy</em></a>
+: Permite controlar el acceso a diferentes áreas de módulos.</li>
 </ul>
 <ol start="3">
-<li><a href="#comportamiento"><strong>De Comportamiento:</strong></a> Hablan sobre como deben comportarse nuestros objetos. Gestionando algoritmos y responsabilidades entre ellos.</li>
+<li><a href="#comportamiento" 
+  
+  
+><strong>De Comportamiento:</strong></a>
+ Hablan sobre como deben comportarse nuestros objetos. Gestionando algoritmos y responsabilidades entre ellos.</li>
 </ol>
 <p>Entre ellos encontramos:</p>
 <ul>
-<li><a href="#chain_of_responsability"><em>Chain of Responsibility</em></a>: Evita acoplar el emisor de una petición a su receptor dando a más de un objeto la posibilidad de responder a una petición. Para ello, se encadenan los receptores y pasa la petición a través de la cadena hasta que es procesada por algún objeto.</li>
-<li><a href="#command"><em>Command</em></a>: Permite solicitar una operación a un objeto sin conocer realmente el contenido de esta operación, ni el receptor real de la misma. Para ello se encapsula la petición como un objeto, con lo que además facilita la parametrización de los métodos.</li>
-<li><a href="#interpreter"><em>Interpreter</em></a>: Dado un idioma, define una representación para su gramática junto con un intérprete que use la representación para interpretar oraciones en el lenguaje.</li>
-<li><a href="#iterator"><em>Iterator</em></a>: Define una interfaz que declara los métodos necesarios para acceder secuencialmente a un grupo de objetos de una colección.</li>
-<li><a href="#mediator"><em>Mediator</em></a>: Define un objeto que encapsula cómo un conjunto de objetos interactúan.</li>
-<li><a href="#memento"><em>Memento</em></a>: Permite almacenar el estado de un objeto (o del sistema completo) en un momento dado de manera que se pueda restaurar en ese punto de manera sencilla. Para ello se mantiene almacenado el estado del objeto para un instante de tiempo en una clase independiente de aquella a la que pertenece el objeto (pero sin romper la encapsulación), de forma que ese recuerdo permita que el objeto sea modificado y pueda volver a su estado anterior.</li>
-<li><a href="#observer"><em>Observer</em></a>: Define una dependencia del tipo uno a muchos entre objetos, de manera que cuando uno de los objetos cambia su estado, notifica este cambio a todos los dependientes.</li>
+<li><a href="#chain_of_responsability" 
+  
+  
+><em>Chain of Responsibility</em></a>
+: Evita acoplar el emisor de una petición a su receptor dando a más de un objeto la posibilidad de responder a una petición. Para ello, se encadenan los receptores y pasa la petición a través de la cadena hasta que es procesada por algún objeto.</li>
+<li><a href="#command" 
+  
+  
+><em>Command</em></a>
+: Permite solicitar una operación a un objeto sin conocer realmente el contenido de esta operación, ni el receptor real de la misma. Para ello se encapsula la petición como un objeto, con lo que además facilita la parametrización de los métodos.</li>
+<li><a href="#interpreter" 
+  
+  
+><em>Interpreter</em></a>
+: Dado un idioma, define una representación para su gramática junto con un intérprete que use la representación para interpretar oraciones en el lenguaje.</li>
+<li><a href="#iterator" 
+  
+  
+><em>Iterator</em></a>
+: Define una interfaz que declara los métodos necesarios para acceder secuencialmente a un grupo de objetos de una colección.</li>
+<li><a href="#mediator" 
+  
+  
+><em>Mediator</em></a>
+: Define un objeto que encapsula cómo un conjunto de objetos interactúan.</li>
+<li><a href="#memento" 
+  
+  
+><em>Memento</em></a>
+: Permite almacenar el estado de un objeto (o del sistema completo) en un momento dado de manera que se pueda restaurar en ese punto de manera sencilla. Para ello se mantiene almacenado el estado del objeto para un instante de tiempo en una clase independiente de aquella a la que pertenece el objeto (pero sin romper la encapsulación), de forma que ese recuerdo permita que el objeto sea modificado y pueda volver a su estado anterior.</li>
+<li><a href="#observer" 
+  
+  
+><em>Observer</em></a>
+: Define una dependencia del tipo uno a muchos entre objetos, de manera que cuando uno de los objetos cambia su estado, notifica este cambio a todos los dependientes.</li>
 <li>[<em>State</em>]: Se utiliza cuando el comportamiento de un objeto cambia dependiendo del estado del mismo.</li>
-<li><a href="#template_method"><em>Template Method</em></a>: Define el esqueleto de programa de un algoritmo en un método, llamado método de plantilla, el cual difiere algunos pasos a las subclases.</li>
-<li><a href="#visitor"><em>Visitor</em></a>: Representa una operación que se realiza sobre los elementos que conforman la estructura de un objeto.</li>
+<li><a href="#template_method" 
+  
+  
+><em>Template Method</em></a>
+: Define el esqueleto de programa de un algoritmo en un método, llamado método de plantilla, el cual difiere algunos pasos a las subclases.</li>
+<li><a href="#visitor" 
+  
+  
+><em>Visitor</em></a>
+: Representa una operación que se realiza sobre los elementos que conforman la estructura de un objeto.</li>
 </ul>
 <p><em><strong>IMPORTANTE:</strong></em> Es importante recalcar que los patrones de diseño son para darte una idea de como diseñar tu aplicacion, no son un &ldquo;copia y pega&rdquo; pues no siempre son la mejor solucion que se adapta a tu problema en algunas cosos puede ponerte las cosas mas dificiles.</p>
 <h2 id="creacionales">Creacionales<a class="anchor" href="#creacionales">#</a></h2>
@@ -2334,14 +2463,30 @@ function add ( int $a, int $b ) {
 <ol start="3">
 <li><strong>Instalar Composer</strong></li>
 </ol>
-<p>Una vez instalado PHP el siguiente paso es instalar composer, un manejador de dependencias para php (Puedes leer más de qué se trata <a href="https://academy.leewayweb.com/que-es-composer/">aquí</a>).</p>
-<p>La forma más simple de instalar composer es hacerlo a través del propio php siguiendo las instrucciones presentes <a href="https://getcomposer.org/download/">aquí</a>.</p>
-<p>Si utilizas Windows puedes usar <a href="https://getcomposer.org/Composer-Setup.exe">este</a> instalador.</p>
+<p>Una vez instalado PHP el siguiente paso es instalar composer, un manejador de dependencias para php (Puedes leer más de qué se trata <a href="https://academy.leewayweb.com/que-es-composer/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>aquí</a>
+).</p>
+<p>La forma más simple de instalar composer es hacerlo a través del propio php siguiendo las instrucciones presentes <a href="https://getcomposer.org/download/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>aquí</a>
+.</p>
+<p>Si utilizas Windows puedes usar <a href="https://getcomposer.org/Composer-Setup.exe" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>este</a>
+ instalador.</p>
 <ol start="4">
 <li><strong>Instalar PHPUnit</strong></li>
 </ol>
 <p>PHPUnit es una librería estándar para la ejecución de pruebas unitarias de PHP.</p>
-<p>En general puedes descargarlo de <a href="https://phpunit.de/getting-started/phpunit-8.html">aquí</a>. En este caso, utilizaremos la versión de instalación por proyecto.</p>
+<p>En general puedes descargarlo de <a href="https://phpunit.de/getting-started/phpunit-8.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>aquí</a>
+. En este caso, utilizaremos la versión de instalación por proyecto.</p>
 <p>PHPUnit es la dependencia principal de nuestro proyecto, si tienes instalado composer, su instalación es muy simple.</p>
 <p>Sólo debes abrir una terminal en el directorio donde descargaste el proyecto y ejecutar <code>composer install</code> .</p>
 <p>El resultado debería verse similar a:</p>
@@ -2353,7 +2498,11 @@ function add ( int $a, int $b ) {
 <li><strong>Configurar el entorno</strong></li>
 </ol>
 <p>Durante este curso utilizamos Visual Studio Code. Si ya dispones de otro entorno y lo conoces bien puedes utilizarlo, si no tienes preferencia te recomiendo que utilices VS Code.</p>
-<p>Puedes descargarlo de <a href="https://code.visualstudio.com/Download">aquí</a></p>
+<p>Puedes descargarlo de <a href="https://code.visualstudio.com/Download" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>aquí</a>
+</p>
 <p>Una vez instalado abre la carpeta donde descargaste el proyecto en Visual Studio. Deberas ver algo como:</p>
 <p><img src="img/good-practices/code.jpg" alt="code"></p>
 <p>Escribe un primer test para verificar que todo está configurado correctamente:</p>
@@ -2366,7 +2515,11 @@ function add ( int $a, int $b ) {
 <p><img src="img/good-practices/test3.jpg" alt="test3"></p>
 <p>Con esto tendrás todo lo necesario para avanzar al proximo punto(TDD)</p>
 <h2 id="test-driven-development">Test Driven Development<a class="anchor" href="#test-driven-development">#</a></h2>
-<p><a href="https://www.youtube.com/watch?time_continue=44&amp;v=EBtu4WyWHPc">TDD</a> o Test Driven Development es una metodología donde hacemos todo al revés(Esta propone: Primero escribir las pruebsa y luego el software). Por un momento vamos a dejar de programar para dedicarnos a escribir las pruebas.</p>
+<p><a href="https://www.youtube.com/watch?time_continue=44&amp;v=EBtu4WyWHPc" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>TDD</a>
+ o Test Driven Development es una metodología donde hacemos todo al revés(Esta propone: Primero escribir las pruebsa y luego el software). Por un momento vamos a dejar de programar para dedicarnos a escribir las pruebas.</p>
 <p>Este tipo de prueba es del tipo <em>unit test</em> y Se trata de lo siguiente:</p>
 <ul>
 <li>Pensar en una funcionalidad que queremos implementar y preguntarnos ¿Como vamos a determinar que lo que vayamos a implementar efectivamente es correcto y hace lo que debe hacer?</li>
@@ -2479,7 +2632,7 @@ OK (4 tests, 11 assertions)
   
     <a class="pagination__item" href="https:///jgmc3012.github.io/apuntes/bases-de-datos/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Bases de Datos</a>
+      <span class="pagination__title" >Bases de Datos</span>
     </a>
   
 </div>
@@ -2512,7 +2665,7 @@ OK (4 tests, 11 assertions)
   
      
     
-      <a class="social-icons__link" title="Twitter"
+      <a class="social-icons__link" rel="me" title="Twitter"
          href="https://twitter.com/jgmc3012"
          target="_blank" rel="noopener">
         <div class="social-icons__icon" style="background-image: url('https:///jgmc3012.github.io/svg/twitter.svg')"></div>
@@ -2521,7 +2674,7 @@ OK (4 tests, 11 assertions)
   
      
     
-      <a class="social-icons__link" title="GitHub"
+      <a class="social-icons__link" rel="me" title="GitHub"
          href="https://github.com/jgmc3012"
          target="_blank" rel="noopener">
         <div class="social-icons__icon" style="background-image: url('https:///jgmc3012.github.io/svg/github.svg')"></div>
@@ -2530,7 +2683,7 @@ OK (4 tests, 11 assertions)
   
      
     
-      <a class="social-icons__link" title="LinkedIn"
+      <a class="social-icons__link" rel="me" title="LinkedIn"
          href="https://www.linkedin.com/in/jesus-gabriel-millan-corobo-42664412a/"
          target="_blank" rel="noopener">
         <div class="social-icons__icon" style="background-image: url('https:///jgmc3012.github.io/svg/linkedin.svg')"></div>

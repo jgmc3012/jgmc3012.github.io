@@ -23,6 +23,7 @@
 
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
 
+
   
   
     
@@ -34,7 +35,7 @@
   
   
     
-    <link type="text/css" rel="stylesheet" href="/jgmc3012.github.io/css/post.min.2cb93c91050d1853bf971cc31e00122edd6e0f405aa1de3b7f8ef67ea3b5a79a.css" integrity="sha256-LLk8kQUNGFO/lxzDHgASLt1uD0Baod47f472fqO1p5o="/>
+    <link type="text/css" rel="stylesheet" href="/jgmc3012.github.io/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
   
     
     <link type="text/css" rel="stylesheet" href="/jgmc3012.github.io/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
@@ -67,7 +68,7 @@
       "datePublished": "2020-10-18 00:00:00 \u002b0000 UTC",
       "dateModified" : "2020-10-18 00:00:00 \u002b0000 UTC",
       "url" : "https:\/\/\/jgmc3012.github.io\/blog\/asyncronia-en-python\/",
-      "wordCount" : "5235",
+      "wordCount" : "5256",
       "keywords" : ["Blog"]
     }
   
@@ -128,6 +129,16 @@
           </header>
           <article class="post__content">
               
+<h5 id="nota-puedes-ver-este-mismo-post-desde-mediumhttpsmediumcomjgmc3012asyncronia-en-python-9d3542a728f5-o-en-formato-markdown-desde-githubhttpsgistgithubcomjgmc3012df1d09b71a26fa2e6218e7021fb2781f">NOTA: Puedes ver este mismo post desde <a href="https://medium.com/@jgmc3012/asyncronia-en-python-9d3542a728f5" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>medium</a>
+ o en formato markdown desde <a href="https://gist.github.com/jgmc3012/df1d09b71a26fa2e6218e7021fb2781f" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>github</a>
+</h5>
+<p><img src="https://1.bp.blogspot.com/-9DfiQYxVyHk/Vwi___XTRJI/AAAAAAAANnI/yqspgAHcBmUaf5cGycRDSp3cfs7vFBoEg/w1200-h630-p-k-no-nu/panoramica-cocina-sant-pau.jpg" alt="alter"></p>
 <h1 id="python-en-el-cuerpo-de-una-mesoner">Python en el cuerpo de un/a mesoner@</h1>
 <p>¿Te imaginas que el/la camarer@ de un restaurante pudiera tomar solo una orden a la vez? Es decir, que si alguien le pidiera unas papas fritas no pudiera atender a más nadie hasta que entregue esas papas fritas.</p>
 <p>No se tu, pero a mi me parece que seria algo lento, creo que lo despedirian el primer día😓.</p>
@@ -142,7 +153,11 @@
 <p>Esto supone un error cuando queremos hacer cosas a gran escala. Imaginemos por un momento que queremos hacer un scraper. Vaya, que esperar un segundo por una request no es muy importante si solo haremos 2 o 3 peticiones. ¿Pero que pasa cuando queremos hacer 100, 200, o incluso miles por hora? Esto se vuelve un gran problema.</p>
 <p>Porque la mayoria del tiempo nuestro CPU esta muerto de risa esperando que le mandemos informacion para trabajar. Es decir, no estamos aprovechando todos nuestros recursos.</p>
 <h2 id="latencias">Latencias<a class="anchor" href="#latencias">#</a></h2>
-<p>Antes de entrar a ver las posibles soluciones para este problema, veamos la siguiente tabla de un repo de <a href="https://gist.github.com/hellerbarde/2843375">github</a> para tener un mejor contexto, sobre el tiempo aproximado que tardamos en buscar/enviar una informacion a los diferentes recursos de un sistema informatico.</p>
+<p>Antes de entrar a ver las posibles soluciones para este problema, veamos la siguiente tabla de un repo de <a href="https://gist.github.com/hellerbarde/2843375" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>github</a>
+ para tener un mejor contexto, sobre el tiempo aproximado que tardamos en buscar/enviar una informacion a los diferentes recursos de un sistema informatico.</p>
 <table>
 <thead>
 <tr>
@@ -164,7 +179,11 @@
 <td>7 ns</td>
 </tr>
 <tr>
-<td>Bloqueo/Desbloqueo del <a href="https://en.wikipedia.org/wiki/Mutual_exclusion">Mutex</a></td>
+<td>Bloqueo/Desbloqueo del <a href="https://en.wikipedia.org/wiki/Mutual_exclusion" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Mutex</a>
+</td>
 <td>25 ns</td>
 </tr>
 <tr>
@@ -172,7 +191,11 @@
 <td>100 ns</td>
 </tr>
 <tr>
-<td>Comprimir 1K bytes con <a href="https://en.wikipedia.org/wiki/Snappy_(compression)">Zippy</a></td>
+<td>Comprimir 1K bytes con <a href="https://en.wikipedia.org/wiki/Snappy_%28compression%29" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Zippy</a>
+</td>
 <td>3,000 ns  =   3 µs</td>
 </tr>
 <tr>
@@ -241,7 +264,11 @@ Aclaremos un poco mas el asunto, llevemos esto a unidades mas grandes(X1.000.000
 <td>Bostezo  Largo</td>
 </tr>
 <tr>
-<td>Bloqueo/Desbloqueo del <a href="https://en.wikipedia.org/wiki/Mutual_exclusion">Mutex</a></td>
+<td>Bloqueo/Desbloqueo del <a href="https://en.wikipedia.org/wiki/Mutual_exclusion" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Mutex</a>
+</td>
 <td>25 s</td>
 <td>Hacer un café</td>
 </tr>
@@ -263,14 +290,26 @@ Aclaremos un poco mas el asunto, llevemos esto a unidades mas grandes(X1.000.000
 </thead>
 <tbody>
 <tr>
-<td>Comprimir 1K bytes con <a href="https://en.wikipedia.org/wiki/Snappy_(compression)">Zippy</a></td>
+<td>Comprimir 1K bytes con <a href="https://en.wikipedia.org/wiki/Snappy_%28compression%29" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Zippy</a>
+</td>
 <td>50 min</td>
-<td>Un episodio de <a href="https://en.wikipedia.org/wiki/Mr._Robot">Mr Robot</a></td>
+<td>Un episodio de <a href="https://en.wikipedia.org/wiki/Mr._Robot" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Mr Robot</a>
+</td>
 </tr>
 <tr>
 <td>Enviar 2K bytes en una red de 1 Gbps</td>
 <td>5.5 hr</td>
-<td>Un curso corto de <a href="https://platzi.com/">Platzi</a>(algo de practica incluida)</td>
+<td>Un curso corto de <a href="https://platzi.com/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Platzi</a>
+(algo de practica incluida)</td>
 </tr>
 </tbody>
 </table>
@@ -302,7 +341,11 @@ Aclaremos un poco mas el asunto, llevemos esto a unidades mas grandes(X1.000.000
 <tr>
 <td>Leer 1 MB secuencialmente desde un SSD</td>
 <td>11.6 days</td>
-<td>Gestación promedio de una <a href="https://ast.wikipedia.org/wiki/Didelphimorphia">zarigüeyas</a></td>
+<td>Gestación promedio de una <a href="https://ast.wikipedia.org/wiki/Didelphimorphia" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>zarigüeyas</a>
+</td>
 </tr>
 </tbody>
 </table>
@@ -359,7 +402,11 @@ Ejemplo:</p>
 <p>Un mesonero recibe una orden de un cliente y la entrega al chef para que la prepare. El chef le indica que puede ir a atender a otros clientes mientras el prepara esa orden.</p>
 <p>Esto es una tarea no bloqueante, debido a que el camarero no se queda allí esperando sin hacer nada. Digamos que &ldquo;aprovecho&rdquo; el tiempo y adenlanto otras tareas pendientes.</p>
 <h2 id="concurrencia">Concurrencia<a class="anchor" href="#concurrencia">#</a></h2>
-<p>La concurrencia segun lo que la <a href="https://es.wikipedia.org/wiki/Concurrencia_(inform%C3%A1tica)">wikipedia</a> nos habla es:</p>
+<p>La concurrencia segun lo que la <a href="https://es.wikipedia.org/wiki/Concurrencia_%28inform%C3%A1tica%29" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>wikipedia</a>
+ nos habla es:</p>
 <blockquote>
 <p>se refiere a la habilidad de distintas partes de un programa, algoritmo, o problema de ser ejecutado en desorden o en orden parcial, sin afectar el resultado final.</p>
 </blockquote>
@@ -383,7 +430,11 @@ Un programa asincrono lo podemos ver con un programa donde sus instrucciones o s
 <h1 id="una-cocina-en-python">Una cocina en Python</h1>
 <p>Para explicar un poco la asincronia usaremos el ejemplo de un restaurante y como se comportan sus mesoneros. En el habran dos objetos:</p>
 <p><strong>NOTA:</strong>
-Veras el codigo un poco grande, pero son <a href="https://docs.python.org/3.8/library/logging.html"><em>logs</em></a> mas que todo , no te asustes.</p>
+Veras el codigo un poco grande, pero son <a href="https://docs.python.org/3.8/library/logging.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+><em>logs</em></a>
+ mas que todo , no te asustes.</p>
 <p>Los identificadores del codigo y los logs estan en ingles. Su documentación en español(aunque no es el estandar en la industria).</p>
 <p><strong>NOTA2:</strong>
 No se aplican las mejores tecnicas de clean code.</p>
@@ -566,9 +617,21 @@ python examples/asyncronia_en_python/sync.py  0,07s user 0,04s system 0% cpu 43,
 <p>Vemos como podemos &ldquo;solucionar&rdquo; esto.</p>
 <h1 id="con-concurrenciausando-multiples-hilos">Con concurrencia(usando multiples hilos)</h1>
 <h2 id="hilos-en-python">Hilos en python<a class="anchor" href="#hilos-en-python">#</a></h2>
-<p>La manera mas &ldquo;facil&rdquo; de trabajar concurrencia en python es con el uso de <a href="https://docs.python.org/3/library/threading.html">Threads</a> o <a href="https://es.wikipedia.org/wiki/Hilo_(inform%C3%A1tica)">Hilos</a>.</p>
+<p>La manera mas &ldquo;facil&rdquo; de trabajar concurrencia en python es con el uso de <a href="https://docs.python.org/3/library/threading.html" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Threads</a>
+ o <a href="https://es.wikipedia.org/wiki/Hilo_%28inform%C3%A1tica%29" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Hilos</a>
+.</p>
 <p>Como ya vimos un hilo es un sub-proceso de nuestro programa. Tenemos que tener en cuenta que si bien esto no es muy costoso, si tiene un coste para nuestro sistema.</p>
-<p>Te dejo una <a href="https://www.youtube.com/watch?v=xbNrROaPYFY">charla</a> muy completa sobre concurrencia y paralelismo. Este es un tema bastante profundo que da tela para otro post.</p>
+<p>Te dejo una <a href="https://www.youtube.com/watch?v=xbNrROaPYFY" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>charla</a>
+ muy completa sobre concurrencia y paralelismo. Este es un tema bastante profundo que da tela para otro post.</p>
 <p>Para nuestro  ejemplo tendremos un hilo por cada &ldquo;camarero&rdquo;, con esto le daremos la indepencia necesaria a cada uno para trabajar sin importar si el otro termino o no con las ordenes pendientes.</p>
 <p>Vayamos al codigo:</p>
 <p>Solo cambiaremos un par de lineas en nuesta &ldquo;Cajera&rdquo;, espeficamente en la funcion <code>receive_orders</code>, quedaria algo así:</p>
@@ -649,8 +712,24 @@ Bueno ya no llamamos a cada camarero de manera secuencial, sino que creamos un p
 
 python examples/asyncronia_en_python/threads.py  0,08s user 0,02s system 0% cpu 23,725 total
 </code></pre>
-<p>Okey, mejoramos un 2x nuestro tiempo de respuesta. Ahora si cada mesonero esta &ldquo;trabajando&rdquo;, pero aun asi estamos perdiendo mucho tiempo en la espera de cada producto. Esto lo podriamos solucionar creando un hilo cada vez que le pidamos un producto a la cocina. Pero esto es algo costoso, tal vez no en nuestro ejemplo, pero imaginos un <a href="https://es.wikipedia.org/wiki/Web_scraping">scraper</a> de amazon para un ecommerce dedicado al <a href="https://es.shopify.com/blog/12377277-guia-completa-de-dropshipping">dropshipping</a>, levantar 1000 hilos, cada uno para hacer una request(y scrapear un sitio web) no es algo trivial.</p>
-<p>Por otra parte el uso de Threads es algo delicado. Cuando usamos threads y estos comparten recursos(aunque nuestros camareros comparten el objecto <code>orders</code>, este no es un caso problematico) se puede ocasionar una &ldquo;sección critica&rdquo;, veamos un ejemplo que tome prestado del curso de <a href="https://codigofacilito.com/cursos/python-concurrente">Progración concurrende en Codigo facilito</a>, que imparte <a href="https://twitter.com/eduardo_gpg">Eduardo</a>, el cual les recomiendo mucho:</p>
+<p>Okey, mejoramos un 2x nuestro tiempo de respuesta. Ahora si cada mesonero esta &ldquo;trabajando&rdquo;, pero aun asi estamos perdiendo mucho tiempo en la espera de cada producto. Esto lo podriamos solucionar creando un hilo cada vez que le pidamos un producto a la cocina. Pero esto es algo costoso, tal vez no en nuestro ejemplo, pero imaginos un <a href="https://es.wikipedia.org/wiki/Web_scraping" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>scraper</a>
+ de amazon para un ecommerce dedicado al <a href="https://es.shopify.com/blog/12377277-guia-completa-de-dropshipping" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>dropshipping</a>
+, levantar 1000 hilos, cada uno para hacer una request(y scrapear un sitio web) no es algo trivial.</p>
+<p>Por otra parte el uso de Threads es algo delicado. Cuando usamos threads y estos comparten recursos(aunque nuestros camareros comparten el objecto <code>orders</code>, este no es un caso problematico) se puede ocasionar una &ldquo;sección critica&rdquo;, veamos un ejemplo que tome prestado del curso de <a href="https://codigofacilito.com/cursos/python-concurrente" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Progración concurrende en Codigo facilito</a>
+, que imparte <a href="https://twitter.com/eduardo_gpg" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Eduardo</a>
+, el cual les recomiendo mucho:</p>
 <pre><code class="language-python">import logging
 import threading
 
@@ -682,7 +761,11 @@ if __name__ == '__main__':
     logging.info(f'El valor final del balance es: {BALANCE}')
 </code></pre>
 <p>El codigo es sencillo, existe un <code>BALANCE</code>(inicializado en 0), supongamos que es de una cuenta bancaria, al cual le restaremos y sumaremos 1(uno) un millon de veces.</p>
-<p>Uno esperaria que el resultado sea 0 siempre, ¿cierto?. Bueno esto casi nunca pasa. Te invido a ejecutar el <a href="https://code.sololearn.com/cHg1nXgonugV/#py">script</a> y verlo por ti mismo. Esto sucedio por algo llamado condición de carrera, donde los procesos compiten por obtener un recurso(en este caso <code>BALANCE</code>).</p>
+<p>Uno esperaria que el resultado sea 0 siempre, ¿cierto?. Bueno esto casi nunca pasa. Te invido a ejecutar el <a href="https://code.sololearn.com/cHg1nXgonugV/#py" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>script</a>
+ y verlo por ti mismo. Esto sucedio por algo llamado condición de carrera, donde los procesos compiten por obtener un recurso(en este caso <code>BALANCE</code>).</p>
 <p>La forma correcta de este codigo se veria así:</p>
 <pre><code class="language-python">import logging
 import threading
@@ -722,7 +805,11 @@ if __name__ == '__main__':
 
     logging.info(f'El valor final del balance es: {BALANCE}')
 </code></pre>
-<p>El <code>lock</code> nos servira como una especie de &ldquo;seguro&rdquo; donde nosotros sabremos que todo lo que este allí dentro solo estara accesible para un solo thread a la vez. Prueba el codigo <a href="https://code.sololearn.com/cFZYU7ViCPps/#py">acá</a></p>
+<p>El <code>lock</code> nos servira como una especie de &ldquo;seguro&rdquo; donde nosotros sabremos que todo lo que este allí dentro solo estara accesible para un solo thread a la vez. Prueba el codigo <a href="https://code.sololearn.com/cFZYU7ViCPps/#py" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>acá</a>
+</p>
 <h2 id="concurrencia-colaborativa-1">Concurrencia colaborativa<a class="anchor" href="#concurrencia-colaborativa-1">#</a></h2>
 <p>Ahora si llegamos a la parte central de ese Post, el <strong>asincronismo</strong>.</p>
 <p>Para continuar tenemos que aclarar dos conceptos fundamentales:</p>
@@ -740,7 +827,11 @@ if __name__ == '__main__':
 </ol>
 <p>NOTA:</p>
 <blockquote>
-<p>Te dejo una charla de <a href="https://youtu.be/BenwwgMx3Hg">entendiendo asyncio sin usar asyncio</a> donde explican esto con peras y manzanas. Por si luego le quieres echar un ojo.</p>
+<p>Te dejo una charla de <a href="https://youtu.be/BenwwgMx3Hg" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>entendiendo asyncio sin usar asyncio</a>
+ donde explican esto con peras y manzanas. Por si luego le quieres echar un ojo.</p>
 </blockquote>
 <h1 id="async-nativo-en-python3">Async Nativo en Python3</h1>
 <p>Veamos un clasico &ldquo;Hola mundo&rdquo; mientras esperamos unos segundo:</p>
@@ -840,7 +931,11 @@ python examples/asyncronia_en_python/asinc2.py  0,27s user 0,05s system 17% cpu 
 </code></pre>
 <p><strong>Podemos ver algunas cosas interesantes</strong>:</p>
 <ol>
-<li>Las 9 request a la API se realizaron en menos de 2 seg, Algo bastante dificil si lo hicieramos con las libreria <a href="https://requests.readthedocs.io/en/master/">requests</a>, la cual es una libreria bloqueante.</li>
+<li>Las 9 request a la API se realizaron en menos de 2 seg, Algo bastante dificil si lo hicieramos con las libreria <a href="https://requests.readthedocs.io/en/master/" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>requests</a>
+, la cual es una libreria bloqueante.</li>
 <li>A pesar de que creamos nuestras corrutinas de una manera secuencial, no podemos predecir el orden en el que se ejecutan(cual finalizara primero).</li>
 <li>La sentencia <code>asyncio.gather(*coros)</code>: recibe una lista de corrutinas y nos devuelve sus valores. Esta sentencia a su vez tambien es una corrutina por lo que tenemos que utilizar <code>await</code> para esperar su resultado final.</li>
 </ol>
@@ -972,10 +1067,18 @@ python examples/asyncronia_en_python/asinc.py  0,13s user 0,02s system 2% cpu 7,
 <p>Asyncio es el modulo principal de asincronia en python. la funcion <code>sleep</code> de asyncio es una funcion asincrona(es no bloqueante), en su contraparte la funcion <code>time.sleep</code> del modulo <code>time</code>, es una funcion bloqueante. Todo los cambio que hicimos en nuestro ultimo ejemplo no servirian de nada si hubieramos seguido trabajando con el modulo <code>time</code>.</p>
 <p>Dicho esto hay que tener mucho cuidado. Python esta dividido en dos ecosistemas: el asincrono y el sincrono. Esto causa que al iniciar un proyecto no veamos en la dificil tarea de elegir que ecosistema utilizaremos.</p>
 <p>El asincrono por un lado cuenta con las maravillas que ya vimos de la concurrencia colaborativa, pero no cuenta con tanta librerias de terceros como las que existen en el ecosistema sincrono.</p>
-<p>Aca te dejo un <a href="https://github.com/timofurrer/awesome-asyncio">repo en github</a> donde encontraras algunas librerias asincronas.</p>
+<p>Aca te dejo un <a href="https://github.com/timofurrer/awesome-asyncio" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>repo en github</a>
+ donde encontraras algunas librerias asincronas.</p>
 <h1 id="despedida">Despedida</h1>
 <p>Espero hayas quedado con ganas de crear futuros proyectos utilizando asyncio en python y con el hambre de investigar mas sobre esta tecnologia. El ecosistema de asyncio ha venido creciendo en los ultimos años.</p>
-<p>Me despido, ojala hayas disfrutado esta lectura tanto como yo crearla. Si quieres dejarme algun feedback lo puedes hacer mencionandome Twitter como <a href="https://twitter.com/jgmc3012">jgmc3012</a>.</p>
+<p>Me despido, ojala hayas disfrutado esta lectura tanto como yo crearla. Si quieres dejarme algun feedback lo puedes hacer mencionandome Twitter como <a href="https://twitter.com/jgmc3012" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>jgmc3012</a>
+.</p>
 <p>Hasta la proximas Dev🤘.</p>
 
 
@@ -1017,7 +1120,7 @@ python examples/asyncronia_en_python/asinc.py  0,13s user 0,02s system 2% cpu 7,
   
      
     
-      <a class="social-icons__link" title="Twitter"
+      <a class="social-icons__link" rel="me" title="Twitter"
          href="https://twitter.com/jgmc3012"
          target="_blank" rel="noopener">
         <div class="social-icons__icon" style="background-image: url('https:///jgmc3012.github.io/svg/twitter.svg')"></div>
@@ -1026,7 +1129,7 @@ python examples/asyncronia_en_python/asinc.py  0,13s user 0,02s system 2% cpu 7,
   
      
     
-      <a class="social-icons__link" title="GitHub"
+      <a class="social-icons__link" rel="me" title="GitHub"
          href="https://github.com/jgmc3012"
          target="_blank" rel="noopener">
         <div class="social-icons__icon" style="background-image: url('https:///jgmc3012.github.io/svg/github.svg')"></div>
@@ -1035,7 +1138,7 @@ python examples/asyncronia_en_python/asinc.py  0,13s user 0,02s system 2% cpu 7,
   
      
     
-      <a class="social-icons__link" title="LinkedIn"
+      <a class="social-icons__link" rel="me" title="LinkedIn"
          href="https://www.linkedin.com/in/jesus-gabriel-millan-corobo-42664412a/"
          target="_blank" rel="noopener">
         <div class="social-icons__icon" style="background-image: url('https:///jgmc3012.github.io/svg/linkedin.svg')"></div>

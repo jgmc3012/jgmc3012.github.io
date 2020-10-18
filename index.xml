@@ -18,9 +18,8 @@
       <pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https:///jgmc3012.github.io/blog/asyncronia-en-python/</guid>
-      <description>Python en el cuerpo de un/a mesoner@ ¿Te imaginas que el/la camarer@ de un restaurante pudiera tomar solo una orden a la vez? Es decir, que si alguien le pidiera unas papas fritas no pudiera atender a más nadie hasta que entregue esas papas fritas.
-No se tu, pero a mi me parece que seria algo lento, creo que lo despedirian el primer día😓.
-Bueno algo asi pasaria con python&amp;hellip; al menos la mayoria de las veces.</description>
+      <description>NOTA: Puedes ver este mismo post desde medium o en formato markdown desde github  Python en el cuerpo de un/a mesoner@ ¿Te imaginas que el/la camarer@ de un restaurante pudiera tomar solo una orden a la vez? Es decir, que si alguien le pidiera unas papas fritas no pudiera atender a más nadie hasta que entregue esas papas fritas.
+No se tu, pero a mi me parece que seria algo lento, creo que lo despedirian el primer día😓.</description>
     </item>
     
     <item>
@@ -61,7 +60,7 @@ MYSQL Instalacion Para realizar la instalación de MySQL en tu pc lo primero que
       
       <guid>https:///jgmc3012.github.io/apuntes/buenas-practicas/</guid>
       <description>¿A quién beneficia contar con código bien escrito? El código bien escrito beneficia a todos los involucrados en el proyecto.
- A tí: Cuando retomemos un proyecto después de un largo tiempo nos beneficiará ya que sabremos cómo está ordenado y cómo está escrito todo. A cualquiera: Cualquier persona que deba modificar el código después de tí. A tu cliente: Aunque nunca lo sabrá, su negocio estará mejor atendido.  Elementos dotan de calidad al código:  Legibilidad: qué tan fácil es interpretar lo que el código dice.</description>
+ A tí: Cuando retomemos un proyecto después de un largo tiempo nos beneficiará ya que sabremos cómo está ordenado y cómo está escrito todo. A cualquiera: Cualquier persona que deba modificar el código después de tí. A tu cliente: Aunque nunca lo sabrá, su negocio estará mejor atendido.  Elementos dotan de calidad al código:  Legibilidad : qué tan fácil es interpretar lo que el código dice.</description>
     </item>
     
     <item>
@@ -70,8 +69,7 @@ MYSQL Instalacion Para realizar la instalación de MySQL en tu pc lo primero que
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https:///jgmc3012.github.io/apuntes/css/</guid>
-      <description>1 Fundamentos 1.1 Sintaxis Puede echarle un vistazo a al vocabulario de css aqui
- Comentarios:  /* Esto es un comentario en CSS */
+      <description>1 Fundamentos 1.1 Sintaxis Puede echarle un vistazo a al vocabulario de css aqui  Comentarios:  /* Esto es un comentario en CSS */
 1.2 Estilos del navegador Por defecto cada browser contiene un estilo de css. Esto puede ocasionar distinta clase de problemas a la hora de nosotros implementar nuestros estilos. La manera de resolver esto es utilizando una libreria de terceros llamada normalize que como su nombre lo indica nos normaliza los estilos por defecto que vayamos a utilizar.</description>
     </item>
     
@@ -164,9 +162,9 @@ Conceptos Basicos Directivas Son basicamente funciones, estan compuestas por un 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https:///jgmc3012.github.io/apuntes/node/</guid>
-      <description>1 Instalaciones Recomendadas   Postman: Para inspeccionar las peticiones al servidor.
-  VScode: No es obligatorio. Tambien se recomiendan las siguientes extensiones:
-   HTML CSS Support. JavaScript(ES6) code snippets. JS_CSS_HTML Formatter. Terminal. TypeScript Importer.  Git: Es un manejador de versiones.  2 Paquetes Recomendados 2.1 Nodemon Nodemon: Este paquete nos sera de mucha ayuda para no tener que bajar y subir el servidor manualmente cada vez que hagamos un cambio.</description>
+      <description>1 Instalaciones Recomendadas   Postman : Para inspeccionar las peticiones al servidor.
+  VScode : No es obligatorio. Tambien se recomiendan las siguientes extensiones:
+   HTML CSS Support. JavaScript(ES6) code snippets. JS_CSS_HTML Formatter. Terminal. TypeScript Importer.  Git : Es un manejador de versiones.  2 Paquetes Recomendados 2.1 Nodemon Nodemon : Este paquete nos sera de mucha ayuda para no tener que bajar y subir el servidor manualmente cada vez que hagamos un cambio.</description>
     </item>
     
     <item>
@@ -186,7 +184,7 @@ Un paradigma es una teoría que suministra la base y modelo para resolver proble
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https:///jgmc3012.github.io/apuntes/python/</guid>
-      <description>¿Qué es Python? Python es un lenguaje de programación creado por Guido Van Rossum, con una sintaxis muy limpia, ideado para enseñar a la gente a programar bien. Se trata de un lenguaje interpretado o de script.
+      <description>¿Qué es Python? Python es un lenguaje de programación creado por Guido Van Rossum , con una sintaxis muy limpia, ideado para enseñar a la gente a programar bien. Se trata de un lenguaje interpretado o de script.
 Ventajas  Legible: sintaxis intuitiva y estricta. Productivo: ahorra mucho código. Portable: para todo sistema operativo. Recargado: viene con muchas librerías por defecto.  Editor recomendado: Atom o Sublime Text.
 Instalación Existen dos versiones de Python que tienen gran uso actualmente, Python 2.</description>
     </item>
