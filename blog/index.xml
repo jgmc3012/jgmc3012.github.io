@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Jesús Millán</title>
+    <link>https:///jgmc3012.github.io/blog/</link>
+    <description>Recent content in Blogs on Jesús Millán</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Sun, 18 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https:///jgmc3012.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Una introducción a la asincronia en Python</title>
+      <link>https:///jgmc3012.github.io/blog/asyncronia-en-python/</link>
+      <pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https:///jgmc3012.github.io/blog/asyncronia-en-python/</guid>
+      <description>Python en el cuerpo de un/a mesoner@ ¿Te imaginas que el/la camarer@ de un restaurante pudiera tomar solo una orden a la vez? Es decir, que si alguien le pidiera unas papas fritas no pudiera atender a más nadie hasta que entregue esas papas fritas.
+No se tu, pero a mi me parece que seria algo lento, creo que lo despedirian el primer día😓.
+Bueno algo asi pasaria con python&amp;hellip; al menos la mayoria de las veces.</description>
+    </item>
+    
+  </channel>
+</rss>
